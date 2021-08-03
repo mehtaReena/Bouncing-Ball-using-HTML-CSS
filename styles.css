@@ -1,0 +1,51 @@
+body {
+background: #222;
+overflow: hidden;
+}
+.container {
+  background-color: black;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid #111;
+  overflow: hidden;
+}
+.ball {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  -webkit-animation: moveX 4.05s linear 0s infinite alternate, moveY 5.4s linear 0s infinite alternate;
+  -moz-animation: moveX 4.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  -o-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes moveX {
+  from { left: 0; } to { left: 100vw; }
+}
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 100vw; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 100vw; }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 98vw; }
+}
+@-webkit-keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 95vh; }
+}
